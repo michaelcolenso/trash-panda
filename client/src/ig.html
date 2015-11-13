@@ -1,0 +1,13 @@
+<template>
+   <section class="au-animate">
+      <h2>${heading}</h2>
+      <div class="flexgrid au-stagger">
+         <div class="au-animate photo" repeat.for="photo of ig.photos">
+               <!-- <span class="title">${photo.caption.text}</span> -->
+            <a class="tile" href="#">
+               <img src.bind="photo.images.standard_resolution.url" crossorigin ref="image"/>
+            </a>
+         </div>
+      </div>
+   </section>
+</template>

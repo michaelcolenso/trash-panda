@@ -1,0 +1,116 @@
+// -----------------------------------------------------------------------------
+// When having several themes, this file contains everything related to the
+// default one.
+// -----------------------------------------------------------------------------
+
+body
+  margin: 0
+  .fa-spinner
+    @include span-columns(2)
+    @include shift(5)
+    font-size: 5em
+    margin-top: 2em
+
+.page-host
+  body
+
+  .section
+    @include outer-container
+    position: relative
+    border: 2px solid #333
+    border-top: none
+    text-align: center
+    margin: 100px auto
+    min-height: 500px
+    h1
+      position: relative
+      font-size: 4.0em
+      margin-top: -2em
+      display: inline-block
+      color: red
+      letter-spacing: .19em
+    > p
+      @include span-columns(8)
+      @include shift(2)
+      font-size: 2em
+      margin-bottom: 3em
+
+    .cards
+      width: 100%
+
+
+  .top-border
+    position: absolute
+    height: 2px
+    width: 16%
+    background-color: #333
+
+  .right
+    right: 0
+
+  .left
+    left: 0
+
+section
+  margin: 0 20px
+
+/* animate page transitions
+
+section.au-enter-active
+  -webkit-animation: fadeInRight 500ms
+  animation: fadeInRight 500ms
+
+div.au-stagger
+  /* 50ms will be applied between each successive enter operation
+  -webkit-animation-delay: 100ms
+  animation-delay: 100ms
+  width: 100%
+
+.card-container
+  &.au-enter
+    opacity: 0 !important
+  &.au-enter-active
+    -webkit-animation: fadeIn 500ms
+    animation: fadeIn 500ms
+
+/* animation definitions
+@-webkit-keyframes fadeInRight
+  0%
+    opacity: 0
+    -webkit-transform: translate3d(100%, 0, 0)
+    transform: translate3d(100%, 0, 0)
+
+  100%
+    opacity: 1
+    -webkit-transform: none
+    transform: none
+
+
+@keyframes fadeInRight
+  0%
+    opacity: 0
+    -webkit-transform: translate3d(100%, 0, 0)
+    -ms-transform: translate3d(100%, 0, 0)
+    transform: translate3d(100%, 0, 0)
+
+  100%
+    opacity: 1
+    -webkit-transform: none
+    -ms-transform: none
+    transform: none
+
+
+@-webkit-keyframes fadeIn
+  0%
+    opacity: 0
+
+  100%
+    opacity: 1
+
+
+@keyframes fadeIn
+  0%
+    opacity: 0
+
+  100%
+    opacity: 1

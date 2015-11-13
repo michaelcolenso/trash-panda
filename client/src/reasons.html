@@ -1,0 +1,26 @@
+<template>
+  <section class="au-animate">
+  <div class="section">
+    <div class="top-border left"></div>
+    <div class="top-border right"></div>
+    <h1>${heading}</h1>
+    <p>${info}:</p>
+    <div class="cards" >
+      <div class="card" repeat.for="highlight of highlights">
+        <div class="card-image">
+          <img src="${highlight.imageUrl}" alt="">
+        </div>
+        <div class="card-header">
+          ${highlight.headline}
+        </div>
+        <div class="card-copy">
+          <p>${highlight.copy}</p>
+          <p><a href="https://${highlight.link}">${highlight.link}</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  </section>
+</template>
