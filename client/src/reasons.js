@@ -1,6 +1,8 @@
 export class Why {
-    heading = 'why me?';
-    info = 'I reviewed the application, and your "needs" align with my "skillset", if you know what I mean.';
+    heading = 'Matched';
+    info = 'I reviewed the application and highlighted what I thought were your needs, requirements, and goals for the position.';
+    info2 = 'After review and analysis of each item listed, it\'s clear my skills, experience, and interests align pretty closely with Brandly\'s.';
+    info3 = 'I\'d love to chat about how I can help the team at Brandly. If you think I may be a good fit for your organization, please don\'t hesitate to reach out at your convenience.';
 
     highlights = [
         {
@@ -58,7 +60,7 @@ export class Why {
         {
             imageUrl: '/images/brandly00008.png',
             headline: 'I\'m a JavaScript guy.',
-            copy: 'I love all things JavaScript. Node.js is my preferred server language, and I\'ve built some both simple and complicated javascript applications using client-side frameworks like Backbone, and I\'ve played with almost all of the new(ish) JS frameworks I\'ve come across. In fact, I built this site just to satisfy my geek curiosity after discovering Aurelia.js through your job posting. '
+            copy: 'I love all things JavaScript. Node.js is my preferred server language (I built an API for this site with Node, actually), and I\'ve built some both simple and complicated javascript applications using client-side frameworks like Backbone, and I\'ve played with almost all of the new(ish) JS frameworks I\'ve come across. In fact, I built this site just to satisfy my geek curiosity after discovering Aurelia.js through your job posting. '
         },
 
         {

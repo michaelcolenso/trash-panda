@@ -1,0 +1,20 @@
+<template>
+  <section class="au-animate">
+    <div class="section">
+      <div class="top-border left"></div>
+      <div class="top-border right"></div>
+    <h1>${heading}</h1>
+    <div class="grid-items-lines">
+      <a href="${post.$.href}" target="_blank" class="grid-item" repeat.for="post of posts.posts.post">
+        <i class="fa fa-2x fa-thumb-tack"> </i>
+        <h4> ${post.$.description}</h4>
+        <p>${post.$.extended}</p>
+        <p class="light">${post.$.tag}</p>
+
+      </a>
+    </div>
+    <div class="right-cover"></div>
+    <div class="bottom-cover"></div>
+  </div>
+  </section>
+</template>

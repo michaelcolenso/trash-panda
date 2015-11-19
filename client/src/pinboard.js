@@ -5,25 +5,24 @@ import {HttpClient} from 'aurelia-http-client';
 // with the @inject decorator to make HTTP requests
 @inject(HttpClient)
 
-export class RandomQuote {
+export class Bookmarks {
 
-  heading = 'Random Quote';
+  heading = 'Bookmarks';
 
-  // View model that will be populated with the
-  // the random quote retrieved from the API and
-  // displayed in the view
-  randomQuote = '';
+  posts = [];
 
   constructor(http) {
     this.http = http;
   };
 
   activate() {
-    return this.http.get('http://localhost:3001/api/random-quote')
+    return this.http.get('http://localhost:3001/pinboard')
     .then(response => {
-      this.randomQuote = response.content;
+      this.posts = JSON.parse(response.content);
+
+      console.log("bookmarks::::::", this.posts);
     }).catch(error => {
-      console.log('Error getting quote');
+      console.log('Error getting bookmarks');
     });
   };
 }

@@ -32,11 +32,12 @@ export default class {
           { route: ['','welcome'], name: 'welcome', moduleId: './welcome', nav: true, title:'Welcome' },
           { route: 'words', name: 'words', moduleId: './words', nav: true, title:'Words' },
           { route: 'code', name: 'code', moduleId: './github', nav: true, title:'Code' },
+          { route: 'bookmarks', name: 'bookmarks', moduleId: './pinboard', nav: true, title:'Bookmarks' },
           { route: 'ig', name: 'Photos', moduleId: './ig', nav: true, title:'Photos' },
           { route: 'why', name: 'Why', moduleId: './why', nav: false, title:'Why' },
           { route: 'reasons', name: 'Reasons', moduleId: './reasons', nav: false, title:'Reasons' },
-          // The secret-quote route is the only one that the user needs to be logged in to see,  so we set auth: true
-          { route: 'secret-quote', name: 'secret-quote', moduleId: './secret-quote', nav: true, title:'Super Secret Quote', auth: true },
+          { route: 'contact', name: 'Contact', moduleId: './contact', nav: true, title:'Contact' },
+          { route: 'outbound', name: 'Outbound', moduleId: './outbound', nav: false, title:'Outbound' },
           { route: 'signup', name: 'signup', moduleId: './signup', nav: false, title:'Signup', authRoute: true },
           { route: 'login', name: 'login', moduleId: './login', nav: false, title:'Login', authRoute: true },
           { route: 'logout', name: 'logout', moduleId: './logout', nav: false, title:'Logout', authRoute: true }

@@ -17,6 +17,16 @@
                 "me": "michaelcolenso"
             }
         },
+        "twilio": {
+            "path": "/twilio",
+            "data": {
+                "me": "",
+                "secrets": {
+                    "accountSid": "AC4f343e67c38ba03de0cde68760a94deb",
+                    "authToken": "bdf3e691a7a76cdc691573565ec4a671"
+                }
+            }
+        },
         "medium": {
             "path": "/blog",
             "data": {

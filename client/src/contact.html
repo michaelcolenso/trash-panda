@@ -1,0 +1,13 @@
+<template>
+   <form role="form" method="post" submit.delegate="callMikey($msg)">
+      <label>
+         <input type="text" name="firstName" value.bind="firstName" id="fn" required />
+         <div class="label-text">Name</div>
+      </label>
+      <label>
+         <input type="text" name="message" id="message" ref="msg" value.bind="message" required />
+         <div class="label-text">Message</div>
+      </label>
+      <button type="submit">text me</button>
+   </form>
+</template>

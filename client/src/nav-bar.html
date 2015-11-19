@@ -1,59 +1,35 @@
 <template bindable="router">
-    <header class="centered-navigation" role="banner">
-      <div class="centered-navigation-wrapper">
-        <a href="javascript:void(0)" class="mobile-logo">
-          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3_dark.png" alt="Logo image">
-        </a>
-        <a href="javascript:void(0)" id="js-centered-navigation-mobile-menu" class="centered-navigation-mobile-menu">MENU</a>
-        <nav role="navigation">
-          <ul id="js-centered-navigation-menu" class="centered-navigation-menu show">
-            <li class="nav-link"><a href="javascript:void(0)">Products</a></li>
-            <li class="nav-link"><a href="javascript:void(0)">About Us</a></li>
-            <li class="nav-link"><a href="javascript:void(0)">Contact</a></li>
-            <li class="nav-link logo">
-              <a href="javascript:void(0)" class="logo">
-                <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3_dark.png" alt="Logo image">
-              </a>
-            </li>
-            <li class="nav-link"><a href="javascript:void(0)">Testimonials</a></li>
-            <li class="nav-link more"><a href="javascript:void(0)">More</a>
-              <ul class="submenu">
-                <li><a href="javascript:void(0)">Submenu Item</a></li>
-                <li><a href="javascript:void(0)">Another Item</a></li>
-                <li class="more"><a href="javascript:void(0)">Item with submenu</a>
-                  <ul class="submenu">
-                    <li><a href="javascript:void(0)">Sub-submenu Item</a></li>
-                    <li><a href="javascript:void(0)">Another Item</a></li>
-                  </ul>
-                </li>
-                <li class="more"><a href="javascript:void(0)">Another submenu</a>
-                  <ul class="submenu">
-                    <li><a href="javascript:void(0)">Sub-submenu</a></li>
-                    <li><a href="javascript:void(0)">An Item</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-link"><a href="javascript:void(0)">Sign up</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+	<nav class="cd-side-navigation">
+		<ul>
+			<li>
+				<a href="#/why" class="selected" data-menu="index">
+					<svg class="nc-icon outline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24"><g transform="translate(0, 0)"> <polygon fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="12,2 3,10 3,23 9,23 9,16 15,16 15,23 21,23 21,10 " stroke-linejoin="miter"></polygon> </g></svg>
+					Why
+				</a>
+			</li>
+
+			<li>
+				<a href="#0" data-menu="services">
+					<svg class="nc-icon outline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24"><g transform="translate(0, 0)"> <polyline data-color="color-2" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points=" 16,7 16,2 8,2 8,7 " stroke-linejoin="miter"></polyline> <rect x="1" y="7" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="22" height="15" stroke-linejoin="miter"></rect> <line fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="5" y1="7" x2="5" y2="22" stroke-linejoin="miter"></line> <line fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="19" y1="7" x2="19" y2="22" stroke-linejoin="miter"></line> </g>
+					</svg>
+					Services
+				</a>
+			</li>
+
+			<li>
+				<a href="#0" data-menu="projects">
+					<svg class="nc-icon outline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24"><g transform="translate(0, 0)"> <rect x="1" y="1" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="22" height="22" stroke-linejoin="miter"></rect> <rect data-color="color-2" x="5" y="5" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="5" height="5" stroke-linejoin="miter"></rect> <rect data-color="color-2" x="14" y="5" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="5" height="5" stroke-linejoin="miter"></rect> <rect data-color="color-2" x="5" y="14" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="5" height="5" stroke-linejoin="miter"></rect> <rect data-color="color-2" x="14" y="14" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="5" height="5" stroke-linejoin="miter"></rect> </g></svg>
+					Projects
+				</a>
+			</li>
+
+			<li>
+				<a href="#0" data-menu="contact">
+					<svg class="nc-icon outline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24"><g transform="translate(0, 0)"> <polyline data-color="color-2" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points=" 19,7 12,14 5,7 " stroke-linejoin="miter"></polyline> <rect x="1" y="3" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="22" height="18" stroke-linejoin="miter"></rect> <line data-color="color-2" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="7" y1="15" x2="5" y2="17" stroke-linejoin="miter"></line> <line data-color="color-2" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="17" y1="15" x2="19" y2="17" stroke-linejoin="miter"></line> </g></svg>
+				</svg>
+				Contact
+			</a>
+		</li>
+	</ul>
+</nav> <!-- .cd-side-navigation -->
 </template>
-
-
-
-                <!-- <ul class="nav navbar-nav">
-                    <li repeat.for="row of router.navigation | authFilter: isAuthenticated" class="${row.isActive ? 'active' : ''}">
-                        <a data-toggle="collapse" data-target="#bs-example-navbar-collapse-1.in" href.bind="row.href">${row.title}</a>
-                    </li>
-                </ul>
-
-                <ul if.bind="!isAuthenticated" class="nav navbar-nav navbar-right">
-                    <li><a href="/#/login">Login</a></li>
-                    <li><a href="/#/signup">Signup</a></li>
-                </ul>
-
-                <ul if.bind="isAuthenticated" class="nav navbar-nav navbar-right">
-                    <li><a href="/#/logout">Logout</a></li>
-                </ul> -->
