@@ -1,10 +1,9 @@
 <template>
    <section class="au-animate">
       <h2>${heading}</h2>
-      <div class="grid-items">
-        <a href="javascript:void(0)" class="grid-item grid-item-big grid-item-image" repeat.for="photo of ig.photos">
-          <img src.bind="photo.images.standard_resolution.url" crossorigin ref="image"/>
-          <p>${photo.caption.text}</p>
+      <div class="flex-boxes">
+        <a href="javascript:void(0)" class="grid-item grid-item-big" repeat.for="photo of ig.photos">
+          <img class="grid-item-image" src.bind="photo.images.standard_resolution.url" crossorigin ref="image"/>
         </a>
      </div>
    </section>

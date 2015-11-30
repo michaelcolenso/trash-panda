@@ -16,21 +16,4 @@ export class Contact {
 
     this.http = http;
   }
-
-  callMikey(message) {
-    message = this.message;
-    this.http.fetch('contact', {
-      method: 'POST',
-      json: true,
-      headers: {
-        'Accept': 'application/json',
-        'content-type': 'application/json'
-      },
-      body: JSON.stringify(message)
-    })
-    .then(response => {
-      console.log(response);
-    });
-  }
-
 }

@@ -1,0 +1,15 @@
+.flex-boxes
+    background-color: $color-6
+    +clearfix
+    +display(flex)
+    +justify-content(center)
+    +align-items(center)
+    +flex-wrap(wrap)
+    clear: both
+    text-align: center
+    .grid-item
+        margin: 1em auto 1em
+        img
+            +transition (all 0.2s ease-in-out)
+            +flex(2 2 15em)
+            +align-self(stretch)

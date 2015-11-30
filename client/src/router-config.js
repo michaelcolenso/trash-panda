@@ -39,6 +39,7 @@ export default class {
           { route: 'contact', name: 'Contact', moduleId: './contact', nav: true, title:'Contact' },
           { route: 'outbound', name: 'Outbound', moduleId: './outbound', nav: false, title:'Outbound' },
           { route: 'signup', name: 'signup', moduleId: './signup', nav: false, title:'Signup', authRoute: true },
+          { route: 'svg', name: 'svg', moduleId: './svg', nav: false, title:'Svg' },
           { route: 'login', name: 'login', moduleId: './login', nav: false, title:'Login', authRoute: true },
           { route: 'logout', name: 'logout', moduleId: './logout', nav: false, title:'Logout', authRoute: true }
         ]);

@@ -20,7 +20,13 @@ export class Code {
     .then(response => {
       // console.log(response.content);
       this.events = response.content;
-      console.log("EVENTS::::::\n", this.events);
+      var eventNodes = this.events.map(function(event) {
+        if (event.type == 'WatchEvent') {
+          console.log(event);
+          return event;
+        }
+
+      })
     }).catch(error => {
       console.log('Error getting events');
     });
