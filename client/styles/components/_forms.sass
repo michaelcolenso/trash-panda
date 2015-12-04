@@ -1,237 +1,67 @@
-.cd-form
-  width: 90%
-  max-width: 600px
-  margin: 4em auto
-  color: $color-3
+fieldset
+  background-color: $secondary-background-color
+  border: $base-border
+  margin: 0 0 $small-spacing
+  padding: $base-spacing
 
-.cd-form::after
-  clear: both
-  content: ""
-  display: table
-
-.cd-form fieldset
-  margin: 24px 0
-
-.cd-form legend
-  padding-bottom: 10px
-  margin-bottom: 20px
-  font-size: 2rem
-  border-bottom: 1px solid $color-5
-
-.cd-form div
-  position: relative
-  margin: 20px 0
-
-.cd-form h4, .cd-form .cd-label
-  font-size: 1.3rem
-  color: $color-5
-  margin-bottom: 10px
-
-.cd-form .cd-label
+input,
+label,
+select
   display: block
+  font-family: $base-font-family
+  font-size: $base-font-size
 
-.cd-form input, .cd-form textarea, .cd-form select, .cd-form label
-  font-family: "Open Sans", sans-serif
-  font-size: 1.6rem
-  color: #2b3e51
+label
+  font-weight: 600
+  margin-bottom: $small-spacing / 2
+  &.required::after
+    content: "*"
+  abbr
+    display: none
 
-.cd-form input[type="text"],
-.cd-form input[type="email"],
-.cd-form textarea,
-.cd-form select,
-.cd-form legend
-  display: block
+#{$all-text-inputs},
+select[multiple=multiple]
+  background-color: $base-background-color
+  border: $base-border
+  border-radius: $base-border-radius
+  box-shadow: $form-box-shadow
+  box-sizing: border-box
+  font-family: $base-font-family
+  font-size: $base-font-size
+  margin-bottom: $small-spacing
+  padding: $base-spacing / 3
+  transition: border-color $base-duration $base-timing
   width: 100%
-  -webkit-appearance: none
-  -moz-appearance: none
-  -ms-appearance: none
-  -o-appearance: none
-  appearance: none
+  &:hover
+    border-color: shade($base-border-color, 20%)
+  &:focus
+    border-color: $action-color
+    box-shadow: $form-box-shadow-focus
+    outline: none
+  &:disabled
+    background-color: shade($base-background-color, 5%)
+    cursor: not-allowed
+    &:hover
+      border: $base-border
 
-.cd-form input[type="text"],
-.cd-form input[type="email"],
-.cd-form textarea,
-.cd-form select
-  padding: 12px
-  border: 1px solid #cfd9db
-  background-color: #ffffff
-  border-radius: .25em
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08)
-
-.cd-form input[type="text"]:focus,
-.cd-form input[type="email"]:focus,
-.cd-form textarea:focus,
-.cd-form select:focus
-  outline: none
-  border-color: #2c97de
-  box-shadow: 0 0 5px rgba(44, 151, 222, 0.2)
-
-.cd-form .cd-select
-  position: relative
-
-.cd-form .cd-select::after
-  content: ''
-  position: absolute
-  z-index: 1
-  right: 16px
-  top: 50%
-  margin-top: -8px
-  display: block
-  width: 16px
-  height: 16px
-  background: url("../img/cd-icon-arrow.svg") no-repeat center center
-  pointer-events: none
-
-.cd-form select
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08)
-  cursor: pointer
-
-.cd-form select::-ms-expand
-  display: none
-
-.cd-form .cd-form-list
-  margin-top: 16px
-
-.cd-form .cd-form-list::after
-  clear: both
-  content: ""
-  display: table
-
-.cd-form .cd-form-list li
-  display: inline-block
-  position: relative
-  -webkit-user-select: none
-  -moz-user-select: none
-  -ms-user-select: none
-  user-select: none
-  margin: 0 26px 16px 0
-  float: left
-
-.cd-form input[type=radio],
-.cd-form input[type=checkbox]
-  position: absolute
-  left: 0
-  top: 50%
-  -webkit-transform: translateY(-50%)
-  -moz-transform: translateY(-50%)
-  -ms-transform: translateY(-50%)
-  -o-transform: translateY(-50%)
-  transform: translateY(-50%)
-  margin: 0
-  padding: 0
-  opacity: 0
-  z-index: 2
-
-.cd-form input[type="radio"] + label,
-.cd-form input[type="checkbox"] + label
-  padding-left: 24px
-
-.cd-form input[type="radio"] + label::before,
-.cd-form input[type="radio"] + label::after,
-.cd-form input[type="checkbox"] + label::before,
-.cd-form input[type="checkbox"] + label::after
-  content: ''
-  display: block
-  position: absolute
-  left: 0
-  top: 50%
-  margin-top: -8px
-  width: 16px
-  height: 16px
-
-.cd-form input[type="radio"] + label::before,
-.cd-form input[type="checkbox"] + label::before
-  border: 1px solid #cfd9db
-  background: #ffffff
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08)
-
-.cd-form input[type="radio"] + label::before,
-.cd-form input[type="radio"] + label::after
-  border-radius: 50%
-
-.cd-form input[type="checkbox"] + label::before,
-.cd-form input[type="checkbox"] + label::after
-  border-radius: .25em
-
-.cd-form input[type="radio"] + label::after,
-.cd-form input[type="checkbox"] + label::after
-  background-color: #2c97de
-  background-position: center center
-  background-repeat: no-repeat
-  box-shadow: 0 0 5px rgba(44, 151, 222, 0.4)
-  display: none
-
-.cd-form input[type="radio"] + label::after
-  background-image: url("../img/cd-icon-radio.svg")
-
-.cd-form input[type="checkbox"] + label::after
-  background-image: url("../img/cd-icon-check.svg")
-
-.cd-form input[type="radio"]:focus + label::before,
-.cd-form input[type="checkbox"]:focus + label::before
-  /* add focus effect for radio and check buttons */
-  box-shadow: 0 0 5px rgba(44, 151, 222, 0.6)
-
-.cd-form input[type="radio"]:checked + label::after,
-.cd-form input[type="checkbox"]:checked + label::after
-  display: block
-
-.cd-form input[type="radio"]:checked + label::before,
-.cd-form input[type="radio"]:checked + label::after,
-.cd-form input[type="checkbox"]:checked + label::before,
-.cd-form input[type="checkbox"]:checked + label::after
-  -webkit-animation: cd-bounce 0.3s
-  -moz-animation: cd-bounce 0.3s
-  animation: cd-bounce 0.3s
-
-.cd-form textarea
-  min-height: 200px
+textarea
   resize: vertical
-  overflow: auto
 
-.cd-form input[type="submit"]
-  border: none
-  background: #2c97de
-  border-radius: .25em
-  padding: 16px 20px
-  color: #ffffff
-  font-weight: bold
-  float: right
-  cursor: pointer
-  -webkit-font-smoothing: antialiased
-  -moz-osx-font-smoothing: grayscale
-  -webkit-appearance: none
-  -moz-appearance: none
-  -ms-appearance: none
-  -o-appearance: none
+input[type="search"]
   appearance: none
 
-.no-touch .cd-form input[type="submit"]:hover
-  background: #42a2e1
+input[type="checkbox"],
+input[type="radio"]
+  display: inline
+  margin-right: $small-spacing / 2
+  + label
+    display: inline-block
 
-.cd-form input[type="submit"]:focus
-  outline: none
-  background: #2b3e51
+input[type="file"]
+  margin-bottom: $small-spacing
+  width: 100%
 
-.cd-form input[type="submit"]:active
-  -webkit-transform: scale(0.9)
-  -moz-transform: scale(0.9)
-  -ms-transform: scale(0.9)
-  -o-transform: scale(0.9)
-  transform: scale(0.9)
-
-.cd-form [required]
-  background: url("../img/cd-required.svg") no-repeat top right
-
-.cd-form .error-message p
-  background: #e94b35
-  color: #ffffff
-  font-size: 1.4rem
-  text-align: center
-  -webkit-font-smoothing: antialiased
-  -moz-osx-font-smoothing: grayscale
-  border-radius: .25em
-  padding: 16px
-
-.cd-form .error
-  border-color: #e94b35 !important
+select
+  margin-bottom: $base-spacing
+  max-width: 100%
+  width: auto

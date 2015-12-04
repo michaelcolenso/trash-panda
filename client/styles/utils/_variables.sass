@@ -1,3 +1,47 @@
+// Typography
+$base-font-family: $helvetica
+$heading-font-family: $base-font-family
+
+// Font Sizes
+$base-font-size: 1.5em
+
+// Line height
+$base-line-height: 1.5
+$heading-line-height: 1.2
+
+// Other Sizes
+$base-border-radius: 3px
+$base-spacing: $base-line-height * 1em
+$small-spacing: $base-spacing / 2
+$base-z-index: 0
+
+// Colors
+$blue: #477dca
+$dark-gray: #333333
+$medium-gray: #999999
+$light-gray: #dddddd
+
+// Font Colors
+$base-font-color: $dark-gray
+$action-color: $blue
+
+// Border
+$base-border-color: $light-gray
+$base-border: 1px solid $base-border-color
+
+// Background Colors
+$base-background-color: white
+$secondary-background-color: tint($base-border-color, 75%)
+
+// Forms
+$form-box-shadow: inset 0 1px 3px rgba(black, 0.06)
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3)
+
+// Animations
+$base-duration: 150ms
+$base-timing: ease
+
+
 $text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default
 $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default
 $text-color: #222 !default
@@ -35,3 +79,59 @@ $primary-font: "PT Sans", sans-serif
 //animation
 
 $animation-duration: 0.5s
+
+// Hover.css DEFAULT OPTIONS
+
+// Prefix for Hover class names
+$nameSpace: "hvr" !default
+
+// Durations
+$fastDuration: 0.1s !default
+$mediumDuration: 0.3s !default
+$slowDuration: 0.5s !default
+
+// Colors
+$primaryColor: #e1e1e1 !default
+$secondaryColor: #666666 !default
+$highlightColor: #cccccc !default
+$activeColor: #2098d1 !default
+$shadowColor: rgba(0, 0, 0, 0.6) !default
+
+// Speech bubbles options
+$tipWidth: 10px !default
+
+//the width of the speech bubble tip
+$tipHeight: 10px !default
+
+//the height of the speech bubble tip
+$tipColor: $primaryColor !default
+
+// Arrows options
+$spaceBetweenTextAndArrows: 2.2em !default
+
+// Curl dimensions
+$curlWidth: 25px !default
+$curlHeight: 25px !default
+
+// Curl colors
+$revealAreaColor: white !default
+
+// reveal area behind the curl
+$curlLineColor: #aaaaaa !default
+
+// crease line
+$curlTransitionColor: #cccccc !default
+
+// color transitioning from crease line to final color
+$curlLastColor: white !default
+
+// final color of the back of the curl
+
+// Browser Prefixes - Which CSS prefixes should be used?
+$webkit: true !default
+$moz: false !default
+$ms: false !default
+$o: false !default
+
+// Compile with or without classes
+$includeClasses: true !default

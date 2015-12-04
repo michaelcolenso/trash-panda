@@ -1,12 +1,20 @@
 <template>
   <section class="reasons au-animate">
-    <div class="words">
-      <h1>${heading}</h1>
-      <p>${info}</p>
-      <p>${info2}</p>
-      <p>${info3}</p>
-      <a href="/#/contact">Let's Talk.</a>
-    </div>
+    <div class="althero">
+      <div class="hero-inner">
+        <a href="" class="hero-logo">
+          <svg class="icon">
+            <use xlink:href="#checkmark" />
+          </svg>
+        </a>
+          <div class="hero-copy">
+            <h1>${heading}</h1>
+            <p>${info}</p>
+            <a class="button" href="/#/contact">Let's Talk.</a>
+          </div>
+        </div>
+      </div>
+
     <div class="cards" >
       <div class="card" repeat.for="highlight of highlights">
         <div class="card-image">

@@ -1,13 +1,13 @@
 <template bindable="router">
-  <section class="au-animate welcome">
-    <h1>${heading}</h1>
-    <p>${info}</p>
-    <svg class="icon">
-      <use xlink:href="#mike" />
-    </svg>
-    <p><a class="button" href="/#/why"><i class="fa fa-4x fa-arrow-right"></i></a></p>
+  <section class="welcome">
+    <div class="hey">
+      <h1>${heading}</h1>
+      <div class="info">
+        <p>${info}</p>
+      </div>
+    </div>
+    <div class="next au-animate" >
+    <a class="button" mouseover.delegate="toggleButton($event)" href="/#/who">Who the heck is Mike Colenso?</a>
+  </div>
   </section>
-    <script>
-      new Vivus('mike', {duration: 200});
-    </script>
 </template>

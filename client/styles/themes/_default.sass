@@ -4,23 +4,11 @@
 // -----------------------------------------------------------------------------
 
 body
-  margin: 0
-  font:
-    size: 1.6rem
-    family: $primary-font
-  color: $color-3
   +display(flex)
-  min-height: 100vH
-  +background-image(url("/images/team.jpg"))
-  background-size: cover
-  background-repeat: no-repeat
-  background-position: center center
-  a
-    color: $color-2
-    text-decoration: none
+  // min-height: 100vH
   section
     min-height: 100vH
-    margin: 0 20px
+    min-width: 100vW
   .splash
     @include outer-container()
     @include display(flex)
@@ -39,55 +27,85 @@ body
       @include flex(1)
       font-size: 5em
 
-.page-host
-  .reasons, .why
-    +align-items(flex-start)
-    +display(flex)
-    +flex-direction(row-wrap)
-    // +justify-content(center)
-    .words
-      padding: 1em
-      +flex(1)
-    .cards
-      padding: 1em
-      +flex(1)
-      color: $color-2
-      font-size: 1.2rem
-      .card
-        min-width: 16rem
-
-    .listimage
-      @include flex(.75)
-      min-width: 300px
-      margin: 1em
-      padding: 1em
-      img
-        margin: 0.67em 0
-        max-width: 100%
-        height: auto
-
-
-  .welcome
-    +display(flex)
-    +flex-direction(column)
-    +align-items(center)
-    +justify-content(space-around)
-    // +align-content(stretch)
-    h1
-      // +align-self(center)
+  .page-host
+    .reasons, .who
+      +align-items(center)
+      .words
+        +flex(1 0 100%)
+        width: 80%
+        margin: auto
+        h3
+          margin-bottom: 2em
+      .cards
+        padding: 1em
+        width: 80%
+        margin: auto
+        +flex(1 0 100%)
+        color: $color-5
+        font-size: 1.2rem
+        .card
+          min-width: 16rem
+      .listimage
+        @include flex(.75)
+        min-width: 300px
+        margin: 1em
+        padding: 1em
+        // img
+        //   margin: 0.67em 0
+        //   max-width: 100%
+        //   height: auto
+    .contact
       text-align: center
-      font-size: 2.0em
-      letter-spacing: .10em
-    p
-      // +align-self(center)
-      text-align: center
-      font-size: 1.5em
-    > img
-      margin: auto
-      width: 80%
-      text-align: center
-    a
+      +align-content(center)
+      background-color: $color-3
+      color: $color-1
+      svg
+        use
+          fill: currentColor
+    .welcome
+      $landing-background-top: rgba(0,0,0,0.8)
+      $landing-background-bottom: rgba(0,0,0,0.2)
+      $landing-color: $color-6
+      $gradient-angle: 0deg
+      $landing-image: "/images/team.jpg"
+      // +background-image(url($landing-image))
+      +background(linear-gradient($gradient-angle, $landing-background-bottom, $landing-background-top), url($landing-image), no-repeat $landing-background-top scroll)
+      background-size: cover
+      background-repeat: no-repeat
+      background-position: center center
+      +display(flex)
+      +flex-direction(column)
+      +align-items(center)
+      +justify-content(flex-start)
+      .hey
+        +display(flex)
+        +flex-direction(column)
+        +align-items(center)
+        +justify-content(space-around)
+        color: $landing-color
+        padding: 2em
+        h1
+          +flex(1)
+          +flex-basis(100%)
+          text-align: center
+          font-size: 3.0em
+          letter-spacing: .10em
+        .info
+          +flex(1)
+          width: 80%
+          text-align: center
+          font-size: 1.1em
+          font-weight: bold
+      .next
+        +display(flex)
+        +flex-direction(column)
+        +align-items(center)
+        +justify-content(flex-end)
+        +flex(1)
+        margin-bottom: 2em
 
+        a
+          +bounce-to-right()
 
 /* animate page transitions
 

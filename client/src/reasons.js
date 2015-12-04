@@ -1,5 +1,5 @@
-export class Why {
-    heading = 'Matched';
+export class Reasons {
+    heading = 'Checking All the Boxes';
     info = 'I reviewed the application and highlighted what I thought were your needs, requirements, and goals for the position.';
     info2 = 'After review and analysis of each item listed, it\'s clear my skills, experience, and interests align pretty closely with Brandly\'s.';
     info3 = 'I\'d love to chat about how I can help the team at Brandly. If you think I may be a good fit for your organization, please don\'t hesitate to reach out at your convenience.';
@@ -14,7 +14,7 @@ export class Why {
         {
             imageUrl: '/images/brandly00018.png',
             headline: 'Expert-level familiarity with HTML5 and CSS3',
-            copy: 'I built this site using Sass (with Bourbon and Neat), and Gulp. I love all the shiny new things that make front-end development easier and more automated. There\'s even some flexbox action going on here.'
+            copy: 'I built this site using Sass (with Bourbon and Neat), and Gulp. The modern ways of incorporating SVG optimization into build tools like Gulp are my current obsession, as well, and I incorporated that into this site as well. I love all the shiny new things that make front-end development easier and more automated. There\'s even some flexbox action going on here.'
         },
         {
             imageUrl: '/images/brandly00017.png',
@@ -55,7 +55,8 @@ export class Why {
         {
             imageUrl: '/images/brandly00009.png',
             headline: 'Absolutely.',
-            copy: 'There\'s all kinds of incredible things that browsers can do now, and HTML/CSS are fundamental to that, obviously.'
+            copy: 'There\'s all kinds of incredible things that browsers can do now, and HTML/CSS are fundamental to that, obviously.',
+            link: 'https://whatwebcando.today/'
         },
         {
             imageUrl: '/images/brandly00008.png',
@@ -66,7 +67,8 @@ export class Why {
         {
             imageUrl: '/images/brandly00007.png',
             headline: 'I try not to imagine life without them.',
-            copy: 'A crucial part of the modern workflow that makes life easier for everyone.'
+            copy: 'A crucial part of the modern workflow that makes life easier for everyone. Mixins and variables FTW.',
+            link: 'http://bourbon.io/'
         },
 
         {
@@ -105,7 +107,4 @@ export class Why {
         }
     ];
 
-    constructor() {
-
-    }
 }

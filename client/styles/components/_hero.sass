@@ -1,0 +1,88 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the hero component.
+// -----------------------------------------------------------------------------
+
+.hero
+  $base-border-radius: 3px !default
+  $action-color: #477dca !default
+  $large-screen: em(860) !default
+  $hero-background-top: rgba(0,0,0,0.6)
+  $hero-background-bottom: rgba(0,0,0,0.2)
+  $hero-color: $color-6
+  $gradient-angle: 10deg
+  $hero-image: "/images/nice-to-meet-you.jpg"
+  +background(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), url($hero-image), no-repeat $hero-background-top scroll)
+  background-color: #324766
+  background-position: top
+  background-repeat: no-repeat
+  background-size: cover
+  padding-bottom: 1em
+  .hero-logo svg
+    height: 4em
+    margin-bottom: 0em
+    path
+      fill: currentColor
+  .hero-inner
+    +outer-container
+    +clearfix
+    margin: auto
+    padding: 2.5em
+    text-align: center
+    .hero-copy
+      text-align: center
+      h1
+        color: $hero-color
+        font-size: 1.6em
+        margin-bottom: 0.5em
+        +media($large-screen)
+          font-size: 1.8em
+      p
+        color: $hero-color
+        line-height: 1.4em
+        margin: 0 auto 3em auto
+        +media($large-screen)
+          font-size: 1.1em
+          max-width: 40%
+
+
+.althero
+  $base-border-radius: 3px !default
+  $action-color: #477dca !default
+  $large-screen: em(860) !default
+  $hero-background-top: rgba(0,0,0,0.8)
+  $hero-background-bottom: rgba(0,0,0,0.6)
+  $hero-color: $color-6
+  $gradient-angle: 10deg
+  $hero-image: "/images/listimage.png"
+  +background(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), url($hero-image), no-repeat $hero-background-top scroll)
+  background-color: #324766
+  background-position: top
+  background-repeat: no-repeat
+  background-size: cover
+  padding-bottom: 1em
+  .hero-logo svg
+    height: 4em
+    margin-bottom: 0em
+    path
+      fill: currentColor
+  .hero-inner
+    +outer-container
+    +clearfix
+    margin: auto
+    padding: 2.5em
+    text-align: center
+    .hero-copy
+      text-align: center
+      h1
+        color: $hero-color
+        font-size: 1.6em
+        margin-bottom: 0.5em
+        +media($large-screen)
+          font-size: 1.8em
+      p
+        color: $hero-color
+        line-height: 1.4em
+        margin: 0 auto 3em auto
+        +media($large-screen)
+          font-size: 1.1em
+          max-width: 40%

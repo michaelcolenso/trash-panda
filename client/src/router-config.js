@@ -34,7 +34,7 @@ export default class {
           { route: 'code', name: 'code', moduleId: './github', nav: true, title:'Code' },
           { route: 'bookmarks', name: 'bookmarks', moduleId: './pinboard', nav: true, title:'Bookmarks' },
           { route: 'ig', name: 'Photos', moduleId: './ig', nav: true, title:'Photos' },
-          { route: 'why', name: 'Why', moduleId: './why', nav: false, title:'Why' },
+          { route: 'who', name: 'Who', moduleId: './who', nav: false, title:'Who' },
           { route: 'reasons', name: 'Reasons', moduleId: './reasons', nav: false, title:'Reasons' },
           { route: 'contact', name: 'Contact', moduleId: './contact', nav: true, title:'Contact' },
           { route: 'outbound', name: 'Outbound', moduleId: './outbound', nav: false, title:'Outbound' },
